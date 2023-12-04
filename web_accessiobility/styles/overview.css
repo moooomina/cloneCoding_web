@@ -1,0 +1,14 @@
+main {}
+main .title_path {}
+main .title_path h1 {}
+main .title_path .path {}
+/* main .title_path .path .skip {} -> skip은 보이지 않으므로 디자인 할 필요X*/
+main .title_path .path dd {}
+main .title_path .path dd img {}
+main .title_path .path dd em {}
+main .contents {}
+main .contents h2 {}
+main .contents h2 img {}
+main .contents .first {}
+main .contents .first em {}
+main .contents p {}
