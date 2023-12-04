@@ -12,3 +12,19 @@ main .contents h2 img {}
 main .contents .first {}
 main .contents .first em {}
 main .contents p {}
+
+/* 선택자 연습 */
+h1 {}
+header {}
+header h1 {}
+header form {}
+header form input {}
+header a {}
+/* h1 {} -> h1이 위에 동일하게 있기 때문에 또 안만들어도 됨*/ 
+.box {}
+.box a {}
+.box a span {}
+.box .contents {}
+.box .contents p {}
+.box .img {}
+.box .img img {}
