@@ -1,0 +1,43 @@
+header {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+header h1 {}
+header h1 a {}
+header h1 a img {}
+header nav {}
+header .lnb {}
+main {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+main .path {}
+main .path .skip {}
+main .path .skip dd {}
+main .path .skip dd a {}
+main .path .skip dd em {}
+main h1 {}
+main p {}
+main .bg {}
+main .bg p {}
+main .vision {}
+main .vision h2 {}
+main .vision p {}
+main .goal_strategy {}
+main .goal_strategy h2 {}
+main .goal_strategy ul {}
+main .goal_strategy ul .first {}
+main .goal_strategy ul .last {}
+main .goal_strategy h2 {}
+main .goal_strategy h2 ul {}
+main .goal_strategy h2 ul li {}
+main .goal_strategy h2 ul li h3 {}
+main .goal_strategy h2 ul li p {}
+footer {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+footer .top {}
+footer .top .left {}
+footer .top .left a {}
+footer .top .right {}
+footer .top .right a {}
+footer address {}
+footer address p {}
