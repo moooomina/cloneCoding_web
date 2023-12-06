@@ -1,35 +1,74 @@
 header {
     font-family: 'Noto Sans KR', sans-serif;
+    padding: 50px 300px;
 }
 header h1 {}
 header h1 a {}
 header h1 a img {}
-header nav {}
-header .lnb {}
+header nav {
+    text-align:center;
+}
+header .lnb {
+    text-align:right;
+}
 main {
     font-family: 'Noto Sans KR', sans-serif;
+    text-align:center;
 }
-main .path {}
+main .path {
+    text-align:right;
+    padding:30px 300px 30px 30px;
+    background-color: #f1f1f1;
+}
 main .path .skip {}
 main .path .skip dd {}
 main .path .skip dd a {}
 main .path .skip dd em {}
-main h1 {}
-main p {}
-main .bg {}
+main h1 {
+    font-size:2.500rem;
+    margin:50px 0 0 0;
+}
+main p {
+    padding:30px;
+}
+main .bg {
+    background-color:#f1f1f1;
+    padding:30px;
+    line-height:2;
+}
 main .bg p {}
 main .vision {}
-main .vision h2 {}
+main .vision h2 {
+    font-size:1.313rem;
+    color:#36b4e5;
+}
 main .vision p {}
-main .goal_strategy {}
-main .goal_strategy h2 {}
-main .goal_strategy ul {}
-main .goal_strategy ul .first {}
-main .goal_strategy ul .last {}
-main .goal_strategy h2 {}
+main .goal_strategy {
+    background-color:#f1f1f1;
+    padding:50px;
+}
+main .goal_strategy h2 {
+    font-size:1.313rem;
+}
+main .goal_strategy ul {
+    display:inline-block;
+}
+main .goal_strategy ul .first {
+    display:inline-block;
+}
+main .goal_strategy ul .last {
+    display:inline-block;
+}
+main .goal_strategy h2 {
+    font-size:1.313rem;
+}
 main .goal_strategy h2 ul {}
-main .goal_strategy h2 ul li {}
-main .goal_strategy h2 ul li h3 {}
+main .goal_strategy h2 ul li {
+    display:inline-block;
+}
+main .goal_strategy h2 ul li h3 {
+    font-size:1.125rem;
+}
 main .goal_strategy h2 ul li p {}
 footer {
     font-family: 'Noto Sans KR', sans-serif;
