@@ -25,7 +25,7 @@ main .title_path .path dd em {
 }
 main .contents {
     padding:50px 20px;
-    background:url(../images/bg.png) no-repeat scroll right top;
+    background:url(../images/bg.png) no-repeat 90% 30%; /* right, top으로 적어도 되지만 조금씩 간격 띄우려면 %로 값을 설정해주면 됨 */
 }
 main .contents h2 {
     color: #1e61a8;
