@@ -1,12 +1,18 @@
 /* header */
 header {
     font-family: 'Noto Sans KR', sans-serif;
+    height:92px; /* 다른 곳에는 높이를 안쓰지만 헤더에는 고정시키기위해 높이를 써준다. */
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 50px;
 }
 header h1 {}
 header h1 a {}
-header h1 a img {}
+header h1 a img {width:60px}
 header nav {}
-header nav a {}
+header nav a {padding:15px;}
 header nav a .active {}
 header nav a .lnb {}
 header nav a .lnb a {}
@@ -86,11 +92,23 @@ main .goal_strategy ul li p {line-height:1.5;}
 /* footer */
 footer {
     font-family: 'Noto Sans KR', sans-serif;
+    padding:50px;
 }
-footer .top {}
+footer .top {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
 footer .top .left {}
-footer .top .left a {}
+footer .top .left a {
+    font-weight:700;
+    margin-right:20px;
+}
 footer .top .right {}
-footer .top .right a {}
-footer address {}
-footer .copyright {}
+footer .top .right a {
+    border:1px solid #aaa;
+    padding:7px 15px;
+    display:inline-block;
+}
+footer address {padding:20px 0;}
+footer .copyright {padding:20px 0;}
