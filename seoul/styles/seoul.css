@@ -81,5 +81,50 @@ header .bottom .right .weather p {
 /* main5행-분야정보 */
 /* main6행-새소식 */
 /* footer */
+footer {
+    width:1151px; margin:0 auto;
+}
 /* footer-1행 */
+footer .top {
+    height:67px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+footer .top .menu {padding:22px 0;}
+footer .top .menu a {padding-right:16px;}
+footer .top .menu a:last-child {padding-right:0;}
+footer .top .menu a em {font-weight:500;}
+footer .top .sns {}
+footer .top .sns a {
+    background-image:url(../images/icon_sns2/icon_set3.png);
+    background-repeat:no-repeat;
+    width:25px; height:25px; text-indent:-9999px;
+    display:inline-block;
+    margin-left:16px;
+}
+footer .top .sns a:nth-child(1) { margin-left:0}
+footer .top .sns a:nth-child(2) {background-position-x:-25px;}
+footer .top .sns a:nth-child(3) {background-position-x:-50px;}
+footer .top .sns a:nth-child(4) {background-position-x:-75px;}
+footer .top .sns a:nth-child(5) {background-position-x:-100px;}
+footer .top .sns a:nth-child(6) {background-position-x:-125px;}
+/* 선택자:hover {} -> 마우스 올렸을 때 이미지를 보일 수 있게 해줌*/
+footer .top .sns a:hover {background-position-y:-25px;}
 /* footer-2행 */
+footer .bottom {
+    height:105px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;}
+footer .bottom .left {}
+footer .bottom .left p {display:inline-block;}
+footer .bottom .left p img {}
+footer .bottom .left address {
+    display:inline-block;
+    margin:24px;
+    font-size:0.813rem;
+}
+footer .bottom .banner {}
+footer .bottom .banner a {}
+footer .bottom .banner a img {margin-left:16px;}
