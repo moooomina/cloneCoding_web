@@ -17,7 +17,9 @@ address,details,mark,time,video,img,summary,iframe,div {
     font-family:'Noto Sans KR',sans-serif;
 }
 ul,ol,li {list-style:none;}
-button {cursor:pointer;}
+button {cursor:pointer; background:none; border:0;}
 table,tr,td,th {border-collapse:collapse;}
+fieldset {border:0;}
+input, select, option {background:none; border:0;}
 /* html에서 의미적으로 존재하나 css디자인상에선 숨겨야하는 요소에 사용 */
 .skip {display:none;}
