@@ -70,10 +70,106 @@ header .bottom .right .weather p {
     font-size:0.8125rem;
 }
 /* main1행 */
+main {}
+/* > * 은 main의 모든 자식들을 선택한것. 자손은 선택X */
+main > * {width:1151px; margin:0 auto;}
 /* main1행-banner */
+main .visual {
+    background-color:yellow;
+    display:flex; justify-content:space-between;
+}
+main .visual .left {
+    background-color:pink; width:770px;
+    position:relative;
+}
+main .visual .left a {}
+main .visual .left a img {}
+main .visual .left .close {
+    background-color:#1e6cb3; color:#fff;
+    font-size:0.813rem;
+    padding:5px 9px;
+    border-radius: 5px;
+    display:inline-block;
+    position:absolute; right:15px; bottom:15px;
+}
 /* main1행-right(코로나, 교통정보) */
+main .visual .right {background-color:lime; width:360px;}
+/* relative(부모) 설정해줄때 인라인이면 적용이 안되므로 꼭 block태그로 바꿔주기 */
+main .visual .right .corona {position:relative; display:block;}
+main .visual .right .corona img {}
+main .visual .right .corona .date {
+    /* background-color:tomato; */
+    font-size:0.8125rem;
+    display:inline-block;
+    position:absolute; right:20px; top:14px;
+}
+main .visual .right .corona .data {
+    /* background-color:midnightblue; */
+    color:#fff; font-weight:400;
+    display:inline-block;
+    text-align:center;
+    font-size:0.8125rem;
+}
+main .visual .right .corona .data:nth-child(3) {
+    position:absolute; left:30px; top:84px;
+    width:140px;
+} /* 확진자 */
+main .visual .right .corona .data:nth-child(4) {
+    position:absolute; right:30px; top:84px;
+    width:140px;
+} /* 추가확진자 */
+main .visual .right .corona .data:nth-child(5) {
+    position:absolute; left:30px; bottom:58px;
+    width:94px;
+} /* 퇴원 */
+main .visual .right .corona .data:nth-child(6) {
+    position:absolute; right:121px; bottom:58px;
+    width:94px;
+} /* 추가퇴원 */
+main .visual .right .corona .data:nth-child(7) {
+    position:absolute; right:32px; bottom:58px;
+    width:59px;
+} /* 사망 */
+main .visual .right .traffic {}
+main .visual .right .traffic img {}
 /* main2행-주요서비스 */
+main .service {}
+main .service .title {
+    background-color:orange;
+    display:flex; flex-basis:row nowrap;
+    justify-content:space-between;
+    padding:15px 0;
+}
+main .service .title h1 {
+    font-size:1.5rem;
+    font-weight:700;
+}
+main .service .title .site {
+    border:1px solid #aaa;
+    padding:3px 11px;
+}
+main .service .content {
+    background-color:aquamarine;
+    display:flex; flex-flow:row nowrap;
+}
+main .service .content a {
+    display:flex; /* a한테 disply:flex를 적용하면 display:block을 쓴 것과 같은 의미로 적용된다. */
+    flex-flow:column nowrap;
+    width:9.09%; text-align:center;
+}
+main .service .content a img {width:60px; margin:0 auto;}
+main .service .content a span {font-size:0.813rem;}
 /* main3행-배너3 */
+main .bnr_bg {
+    background-color:#eff4f8;
+    width:1920px;
+}
+main .bnr_bg .bnr {
+    width:1151px; margin:0 auto;
+    display:flex;
+}
+main .bnr_bg .bnr a {display:block;}
+main .bnr_bg .bnr a img {}
 /* main4행-게시판 */
 /* main4행-게시판-이벤트신청 */
 /* main4행-게시판-이달행사축제 */
