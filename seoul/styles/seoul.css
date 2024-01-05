@@ -30,9 +30,9 @@ header .bottom h1 a {}
 header .bottom h1 img {}
 header .bottom #searchFrm {}
 header .bottom #searchFrm fieldset {
+    background-color:#fff;
     width:370px; height:47px;
     border:4px solid #1e6cb3;
-    background-color:#fff;
     display:flex; flex-flow:row nowrap;
     justify-content: space-between;
     align-items:center; padding:0 13px 0 21px;
