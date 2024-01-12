@@ -222,7 +222,9 @@ main .item_detail .right_container #itemFrm fieldset #sizeOpt {
     padding:10px; margin-bottom:7px; 
 }
 main .item_detail .right_container #itemFrm fieldset #colorOpt option,
-main .item_detail .right_container #itemFrm fieldset #sizeOpt option {}
+main .item_detail .right_container #itemFrm fieldset #sizeOpt option {
+    font-size:0.85rem;
+}
 /* right_container-form 색상, 사이즈 선택 메뉴(개별) */
 main .item_detail .right_container #itemFrm fieldset #colorOpt {
     border:1px solid #35c5f0; 
