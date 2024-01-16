@@ -1,7 +1,7 @@
 /* 통합 common css */
 /* all */
 #login_wrap {
-    background: aquamarine;
+    background:lightgoldenrodyellow;
     max-width:743px; margin:0 auto; position: relative;
 }
 #login_wrap #lang_select {

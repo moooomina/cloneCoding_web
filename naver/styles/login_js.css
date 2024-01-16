@@ -1,0 +1,35 @@
+/* -----javascript classList 호출 클래스 모음----- */
+/* 로그인 탭 제목 클릭시 활성화 active */
+#login_wrap main #loginFrm fieldset .login_title .active {
+    background:#fff; border-bottom-color:#fff;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    position:relative; z-index:100;
+}
+#login_wrap main #loginFrm fieldset .login_title .active::after {
+    display:inline-block; content:'';
+    background:url(../images/m_sp_login.png) 0 -130px;
+    width:14px; height:59px;
+    background-size:251px 210px;
+    position:absolute; z-index:100; top:-1px;
+}
+#login_wrap main #loginFrm fieldset .login_title .active:nth-child(1):after {position:absolute; right:-8px;}
+#login_wrap main #loginFrm fieldset .login_title .active:nth-child(2)::before {
+    display:inline-block; content:'';
+    background:url(../images/m_sp_login.png);
+    width:14px; height:59px;
+    background-size:251px 210px;
+    position:absolute; z-index:100;
+    background-position:-16px -130px;
+    left:-10px; top:-1px
+}
+#login_wrap main #loginFrm fieldset .login_title .active:nth-child(2):after {position:absolute; right:-8px; top:-1px;}
+#login_wrap main #loginFrm fieldset .login_title .active:nth-child(3):after {
+    background-position:-16px -130px;
+    left:-8px
+}
+
+/* 탭 제목 아이콘 Y좌표 활성화 */
+#login_wrap main #loginFrm fieldset .login_title .active:nth-child(1) a span::before {background-position-y:-100px;}
+#login_wrap main #loginFrm fieldset .login_title .active:nth-child(2) a span::before {background-position-y:-138px;}
+#login_wrap main #loginFrm fieldset .login_title .active:nth-child(3) a > em:first-child::before {background-position-y:-44px;}

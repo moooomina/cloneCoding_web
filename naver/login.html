@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/login_js.css"> <!-- js호출용 -->
 </head>
 <body>
     <div id="login_wrap">
@@ -21,7 +22,7 @@
                     <legend class="skip">ID로그인, 일회용번호, QR코드 양식</legend>
                     <!-- 제목 탭 구성 -->
                     <div class="login_title">
-                        <h2 class="active"><a href="#"><span>ID로그인</span></a></h2>
+                        <h2><a href="#"><span>ID로그인</span></a></h2>
                         <h2><a href="#"><span>일회용번호</span></a></h2>
                         <h2><a href="#">
                             <em>QR코드</em>
@@ -36,8 +37,8 @@
                         <!-- 내용 탭 1. ID 로그인 -->
                         <div class="login_c id_login">
                             <div class="id_pw_input">
-                                <input type="text" placeholder="아이디" id="userId">
-                                <input type="password" placeholder="비밀번호" id="userPw">
+                                <span><input type="text" placeholder="아이디" id="userId"></span>
+                                <span><input type="password" placeholder="비밀번호" id="userPw" maxlength="16"></span>
                             </div>
                             <div class="id_pw_state">
                                 <div class="login_state">
@@ -63,8 +64,10 @@
                         <div class="login_c disposable_login">
                             <h2>네이버앱의 <em>메뉴 > 설정<span></span> > 로그인 아이디 관리 ><br>
                                 더보기<span></span> > 일회용 로그인 번호</em>에 보이는 번호를 입력해 주세요.</h2>
-                            <a href="#" title="도움말">도움말</a>
-                            <input type="text" placeholder="번호를 입력하세요." id="userNum">
+                            <a href="#" title="도움말"></a>
+                            <div class="user_number">
+                                <input type="text" placeholder="번호를 입력하세요." id="userNum">
+                            </div>
                             <div class="login_btn_wrap">
                                 <button type="button" id="disposable_loginBtn">로그인</button>
                             </div>
