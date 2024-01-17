@@ -264,10 +264,11 @@
 #login_wrap main .search {text-align:center;}
 #login_wrap main .search a {font-size:0.91rem; color:#888;}
 #login_wrap main .search a::after {
-    content:''; border-right:1px solid #ccc;
-    padding:0 10px; margin-right:15px;
+    content:''; display:inline-block;
+    background:#ccc; width:1px; height:12px;
+    transform:translate(13px, 1px); margin-right:20px;
 }
-#login_wrap main .search a:last-child::after {border:0; margin-right:0; padding:0;}
+#login_wrap main .search a:last-child::after {display:none; margin-right:0;}
 #login_wrap main .advertising {margin-top:30px;}
 #login_wrap main .advertising a {}
 #login_wrap main .advertising a img {width:100%;}
