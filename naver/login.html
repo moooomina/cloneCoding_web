@@ -62,12 +62,17 @@
                         </div>
                         <!-- 내용 탭 2. 일회용 번호 -->
                         <div class="login_c disposable_login">
-                            <h2>네이버앱의 <em>메뉴 > 설정<span></span> > 로그인 아이디 관리 ><br>
-                                더보기<span></span> > 일회용 로그인 번호</em>에 보이는 번호를 입력해 주세요.</h2>
-                            <a href="#" title="도움말"></a>
+                            <div class="disposable_login_txt">
+                                <h2>
+                                    네이버앱의 <em>메뉴 > 설정<span></span> > 로그인 아이디 관리 ><br>
+                                    더보기<span></span> > 일회용 로그인 번호</em>에 보이는 번호를 입력해 주세요.
+                                </h2>
+                                <a href="#" title="도움말"></a>
+                            </div>
                             <div class="user_number">
                                 <input type="text" placeholder="번호를 입력하세요." id="userNum">
                             </div>
+                            <div class="error_message"><!-- JS --></div>
                             <div class="login_btn_wrap">
                                 <button type="button" id="disposable_loginBtn">로그인</button>
                             </div>
@@ -76,13 +81,21 @@
                         <div class="login_c qr_login">
                             <div class="qr_wrap">
                                 <h2><img src="./images/qr.svg" alt="QR코드"></h2>
-                                <p>남은시간</p>
-                                <h3>분 초</h3>
+                                <div class="qr_txt_wrap">
+                                    <p>남은시간</p>
+                                    <h3>01분 57초</h3>
+                                </div>
                             </div>
-                            <p>공용 네트워크, 공용 PC라면 안전을 위해<br>
-                                QR코드로 로그인해주세요.</p>
-                            <p>네이버 앱<span></span> > 렌즈<span></span> 를 눌러 QR코드를 스캔하여<br>
-                            보이는 숫자 중 <strong>42</strong>를 선택하면 로그인 됩니다.<span title="도움말"></span></p>
+                            <p>
+                                공용 네트워크, 공용 PC라면 안전을 위해<br>
+                                QR코드로 로그인해주세요.
+                            </p>
+                            <div class="info_txt">
+                                <p>
+                                    네이버 앱<span></span> > 렌즈<span></span> 를 눌러 QR코드를 스캔하여<br>
+                                    보이는 숫자 중 <strong>42</strong>를 선택하면 로그인 됩니다.<span title="도움말"></span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </fieldset>
