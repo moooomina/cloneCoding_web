@@ -1,0 +1,33 @@
+html, body {scroll-behavior:smooth;}
+.main {}
+.main .bg {
+    width:100%; height:100vh;
+    background-size:cover; background-position:center;
+}
+.main .interior1 {background:url(../images/bg1.jpg);}
+.main .interior2 {background:url(../images/bg2.jpg);}
+.main .interior3 {background:url(../images/bg3.jpg);}
+.main .interior4 {background:url(../images/bg4.jpg);}
+.btn {
+    display:flex; flex-flow:column nowrap;
+    position:fixed; right:50px; top:50%;
+    align-items:flex-end;
+}
+.btn button {
+    background:#222; color:#fff; overflow:hidden;
+    border-radius:50%; width:30px; height:30px;
+    position:relative; margin-bottom:10px; transition:all 0.5s;
+}
+.btn button:hover {
+    background:rgba(0,0,0,0.5);
+    width:100px; border-radius:10px;
+}
+.btn button::after {
+    position:absolute; right:0; top:0;
+    font-size:0.85rme; display:block; line-height:30px;
+    white-space:nowrap; padding-right:10px;
+}
+.btn #bt1:hover::after {content:'interior A .';}
+.btn #bt2:hover::after {content:'interior B .';}
+.btn #bt3:hover::after {content:'interior C .';}
+.btn #bt4:hover::after {content:'interior D .';}
