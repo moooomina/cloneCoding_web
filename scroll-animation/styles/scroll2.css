@@ -1,0 +1,37 @@
+html, body {scroll-behavior:smooth;}
+header {position:absolute; z-index:9999; padding:50px;}
+header h1 {font-size:2rem; font-weight:700; margin-bottom:10px;}
+/* header nav {}
+header nav a {margin-right:10px;}
+header nav a:last-child {margin-right:0;} */
+header nav {
+    border-bottom:1px solid rgba(255,255,255,0.2);
+}
+header nav a {padding:10px 0; position:relative; margin-right:15px;}
+header nav a::after {
+    content:''; display:block;
+    width:100%; height:2px; background:#000;
+    position:absolute; bottom:-1px;
+    transform:scaleX(1);
+}
+/* header nav a:hover::after {transform:scaleX(2.5);} */
+.stroke {
+    display:flex; flex-flow:column nowrap;
+    position:fixed;
+}
+.stroke .stroke1, .stroke .stroke2, .stroke .stroke3, .stroke .stroke4 {
+    border:1px solid #fff; position:absolute; z-index:999; width:100px; border-radius:100px;
+}
+.stroke .stroke2 {bottom:450px;}
+.stroke .stroke3 {}
+.stroke .stroke4 {}
+.main {}
+.main .bg {
+    width:100%; height:100vh;
+    background-size:cover; background-position:center;
+}
+.main .interior1 {background:url(../images/bg1.jpg);}
+.main .interior2 {background:url(../images/bg2.jpg);}
+.main .interior3 {background:url(../images/bg3.jpg);}
+.main .interior4 {background:url(../images/bg4.jpg);}
+/* active class */
