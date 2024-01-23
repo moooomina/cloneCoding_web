@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab_jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        * {list-style:none; margin:0; padding:0;}
+        header {background:lavender; width:800px; height:50px; margin:50px auto 0;}
+        header nav {}
+        header nav .gnb {display:flex;}
+        header nav .gnb > li {position: relative;}
+        header nav .gnb > li > a {}
+        header nav .gnb > li > .lnb {position:absolute; background:lavenderblush;}
+        header nav .gnb > li > .lnb li {}
+        header nav .gnb > li > .lnb li a {}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="gnb">
+                <li><a href="#">gnb1</a></li>
+                <li><a href="#">gnb2</a>
+                    <ul class="lnb">
+                        <li><a href="#">lnb1</a></li>
+                        <li><a href="#">lnb2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">gnb3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        $('.lnb').hide()
+        $('.gnb > li').on('mouseover',function(){//제이쿼리에는 화살표함수쓰면 안됨
+            $('.lnb').stop().slideDown(); //stop을 넣어줘야 마우스를 기억하지 않고 내 움직임에 멈춤
+        })
+        $('.gnb > li').on('mouseout',function(){
+            $('.lnb').stop().slideUp();
+        })
+    </script>
+</body>
+</html>

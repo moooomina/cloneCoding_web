@@ -1,0 +1,23 @@
+main {}
+main .visual {height:900px; overflow:hidden;}
+main .visual img {width:100%}
+main .txt {padding:300px 0;}
+main .txt h1 {font-size:5rem; font-weight:800; text-align:center; opacity:0;}
+main .info {margin-bottom:300px; text-align:center;}
+main .info img {width:800px; opacity:0;}
+main .info .info1 {}
+main .info .info2 {}
+/* js 등장 애니메이션 */
+@keyframes opacity_scale {
+    0% {opacity:0; transform:scale(1.2);}
+    100% {opacity:1; transform:scale(1);}
+}
+@keyframes translate1 {
+    0% {opacity:0; transform:translateX(200px);}
+    100% {opacity:1; transform:translateX(0px);}
+}
+@keyframes translate2 {
+    0% {opacity:0; transform:translateY(100px);}
+    100% {opacity:1; transform:translateY(0px);}
+}
+/* css에서 꼭 opacity:0으로 먼저 만들어놔야 애니메이션 적용시 이상하지 않다. */
